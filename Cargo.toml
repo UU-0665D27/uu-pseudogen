@@ -1,0 +1,15 @@
+[package]
+name = "uu-pseudogen"
+version = "0.1.0"
+edition = "2024"
+
+[lints.clippy]
+all="deny"
+pedantic="deny"
+nursery="deny"
+perf="deny"
+
+[dependencies]
+clap = { version = "4.6.7", features = ["derive"] }
+rand = { version = "0.10", features = ["chacha"] }
+rpassword = "7.5.4"
